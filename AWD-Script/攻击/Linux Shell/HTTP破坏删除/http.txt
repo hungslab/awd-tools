@@ -1,0 +1,8 @@
+#!/bin/bash
+cp -r /var/www/html /tmp/
+while true
+do
+	rm -rf /var/www/html
+	cp -rf /tmp/html /var/www
+	sleep 0.1
+done

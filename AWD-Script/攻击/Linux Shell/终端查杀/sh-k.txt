@@ -1,0 +1,10 @@
+#!/bin/bash
+while true
+do
+	setenforce 1
+	pkill -kill -t pts/3
+	pkill -kill -t pts/4
+	pkill -kill -t pts/5
+	pkill -kill -t pts/6
+	sleep 0.1
+done

@@ -1,0 +1,6 @@
+#!/bin/bash
+while true
+do
+	kill -9 $(netstat -anpt | grep nc | awk '{print $7}' | awk -F '/' '{print $1}')
+	sleep 0.1
+done

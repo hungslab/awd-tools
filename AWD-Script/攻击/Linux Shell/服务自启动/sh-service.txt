@@ -1,0 +1,10 @@
+#!/bin/bash
+while true
+do
+	service httpd start
+	service mysqld start
+	service vsftpd start
+	service xinted start
+	service sshd start
+	sleep 0.1
+done

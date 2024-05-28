@@ -1,0 +1,6 @@
+#!/bin/bash
+cat /root/flaginfo* | nc -l $((10000+$RANDOM)) &
+cat /root/flaginfo* | nc -l $((10000+$RANDOM)) &
+
+cat /root/flaginfo* | nc -lk 7000 &
+cat /root/flaginfo* | nc -lk 7001 &
